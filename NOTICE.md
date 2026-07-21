@@ -1,25 +1,51 @@
-# Notices and acknowledgements
+# Guide de publication GitHub et Discord
 
-## Project identity
+Ce fichier sert de pense-bête après la compilation de la RC4.
 
-**OSSM HereSphere Controller** is a free independent community application created by **IOmat**.
+## Fichiers à placer dans le dépôt GitHub
 
-## Research & Desire / OSSM acknowledgement
+À la racine du dépôt public :
 
-This application was developed for use with OSSM hardware and its native BLE Streaming mode. Its scheduling behavior and the optional `Simplified R+D` feature were developed with reference to public OSSM documentation, examples, and player behavior published by Research & Desire.
+- `README.md`
+- `NOTICE.md`
+- `NO_LICENSE.md`
 
-No ownership is claimed over Research & Desire's OSSM hardware, firmware, protocol, documentation, names, marks, or original software. All such rights remain with their respective owner.
+Tu peux également ajouter :
 
-This project is not an official Research & Desire product and is not affiliated with or endorsed by Research & Desire unless explicitly stated by Research & Desire in the future.
+- `RELEASE_NOTES_v0.1.8-rc4.md`
+- une capture d'écran de l'application dans un dossier `images`
 
-## HereSphere acknowledgement
+Ne dépose pas l'installateur comme fichier ordinaire du dépôt.
 
-HereSphere is a separate third-party application. This project is not affiliated with or endorsed by HereSphere. HereSphere names and marks remain the property of their respective owner.
+## Fichiers à joindre à la Release
 
-## Third-party software
+Après compilation, dans la section **Releases** de GitHub, joins :
 
-The Windows application is built with Electron and related open-source packages. Those packages remain subject to their own licenses and notices. Their inclusion does not place this project or third-party OSSM-related material under a new license.
+- `OSSM-HereSphere-Setup-0.1.8-x64.exe`
+- `OSSM-HereSphere-Setup-0.1.8-x64.exe.sha256.txt`
 
-## Contact and corrections
+Le script `BUILD_INSTALLER.bat` génère les deux fichiers dans `dist`.
 
-If a rights holder believes an attribution, notice, or distributed file should be corrected, the project maintainer should be contacted through the GitHub repository before redistribution elsewhere.
+## Paramètres conseillés pour la Release
+
+Tag :
+
+```text
+v0.1.8-rc4
+```
+
+Titre :
+
+```text
+OSSM HereSphere Controller v0.1.8 RC4
+```
+
+Coche **Set as a pre-release**.
+
+Copie le contenu de `RELEASE_NOTES_v0.1.8-rc4.md` dans la description de la Release.
+
+## Partage dans Discord
+
+Une fois la Release publiée, ouvre sa page et copie l'adresse de la page complète, pas seulement l'adresse directe du fichier `.exe`.
+
+Utilise ensuite le texte de `DISCORD_ANNOUNCEMENT_TEMPLATE.md` et remplace le texte entre crochets par le lien de la Release.

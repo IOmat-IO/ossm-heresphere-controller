@@ -1,0 +1,10 @@
+OSSM HereSphere Controller v0.1.8 RC4
+Frozen motor-core record
+
+The following motor/synchronization files are unchanged from RC3:
+
+9c2c35521981fd4bc99fffda70afd501e1b5ed94ffdf51ec544a7c2d856e59f5  src/renderer/core.mjs
+a3d1a69573efd573a4c37c5262cf0d0d6a7d8080c0c5840aeb941956e7aee2a5  src/main/heresphere-client.js
+041f6c0ae9e71789475e0aa4d57043326ea64dae881c0c5159bbed18d123ae42  src/main/heresphere-discovery.js
+1762091da88ddf505a5f8436eb1ae2349a8a41ace25b08c90492f429a8a4338f  src/main/script-library.js
+4968b075aa4e0efa656d268cff6b7a605fa894b0d61346b87f46440c1636daed  src/main/settings-store.js
